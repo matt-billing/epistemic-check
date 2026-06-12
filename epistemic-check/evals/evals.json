@@ -1,0 +1,23 @@
+{
+  "skill_name": "epistemic-check",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Someone shared a post on Facebook saying 'Foreign nationals now commit 1 in 4 sex crimes in London - they're importing criminals.' Is this true?",
+      "expected_output": "Verdict-first analysis: claim stripped from frame, classified as statistic + causal/moral stack, denominator and definitions demanded (charged vs convicted, population share comparison), category shift flagged ('some commit crimes' to 'importing criminals'), confidence level assigned with disconfirmation conditions stated.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "My mate says you can't trust anything about NHS waiting lists if it's from the Telegraph because it's a Tory paper pushing privatisation. He won't even read the article. The article says waiting lists hit 7.9 million. Who's right?",
+      "expected_output": "Identifies the immunity clause (source dismissal replacing argument evaluation), checks the 7.9m figure against the primary source (NHS England RTT data), explains the figure is a count of pathways not patients, assigns confidence, states what would change it. Neither validates blind trust of the Telegraph nor the blanket dismissal.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "There's a video going round of a council worker tipping recycling into the same truck as general waste. Proof recycling is a scam, right?",
+      "expected_output": "Real-vs-representative analysis: accepts the video may be genuine, refuses the anecdote-to-sociology leap, notes legitimate explanations (contaminated load, split-body trucks), cites base-rate context if findable, assigns low confidence to 'recycling is a scam' as a general claim, states what evidence would actually demonstrate it.",
+      "files": []
+    }
+  ]
+}
